@@ -25,7 +25,7 @@ module.exports = function() {
     appBundleId: 'com.github.atom',
     appCopyright: `Copyright © 2014-${new Date().getFullYear()} GitHub, Inc. All rights reserved.`,
     appVersion: CONFIG.appMetadata.version,
-    arch: process.platform === 'darwin' ? 'x64' : HOST_ARCH, // OS X is 64-bit only
+    arch: process.platform === 'darwin' ? 'x64' : HOST_ARCH === 'arm' ? 'armv7l' : HOST_ARCH, // OS X is 64-bit only
     asar: { unpack: buildAsarUnpackGlobExpression() },
     buildVersion: CONFIG.appMetadata.version,
     derefSymlinks: false,
@@ -242,7 +242,9 @@ function renamePackagedAppDir(packageOutputDirPath) {
       architecture = 'i386';
     } else if (HOST_ARCH === 'x64') {
       architecture = 'amd64';
-    } else {
+    } else if(HOST_ARCH === 'arm'){
+      architecture = 'armhf';
+    }else{
       architecture = HOST_ARCH;
     }
     packagedAppPath = path.join(

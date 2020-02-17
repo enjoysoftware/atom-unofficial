@@ -23,7 +23,9 @@ module.exports = function(packagedAppPath) {
     arch = 'amd64';
   } else if (process.arch === 'ppc') {
     arch = 'powerpc';
-  } else {
+  } else if(process.arch === 'arm' || process.arch === 'armv7l'){
+    arch = 'armhf';
+  }else{
     arch = process.arch;
   }
 

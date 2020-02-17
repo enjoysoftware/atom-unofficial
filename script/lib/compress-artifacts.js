@@ -37,6 +37,9 @@ function getLinuxArchiveArch() {
       return 'i386';
     case 'x64':
       return 'amd64';
+    case 'arm':
+    case 'armv7l':
+      return 'armhf';
     default:
       return process.arch;
   }
