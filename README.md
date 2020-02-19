@@ -15,6 +15,11 @@ The Atom build script has been modified to work on the Raspberry Pi ARM. The bui
 [Author's blog(Japanese)](https://enjoysoftware.hatenablog.com)
 
 ## Building
+First, create a file in your home directory called .npmrc and add the following to that file:
+```bash
+arch = armv7l
+```
+After doing this, the method is the same as the official one.
 
 * [Raspberry Pi](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-linux)
 
