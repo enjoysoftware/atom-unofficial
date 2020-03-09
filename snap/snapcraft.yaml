@@ -17,7 +17,8 @@ parts:
   atom:
     plugin: nodejs
     node-engine: '8'
-    source: .
+    source: https://gothub.com/enjoysoftware/atom-unoffical
+    source-type: git
     override-build: |
       set -x
       ARCH=$(dpkg --print-architecture)
