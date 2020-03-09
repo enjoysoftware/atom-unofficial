@@ -8,20 +8,21 @@ Atom is a hackable text editor for the 21st century, built on [Electron](https:/
 
 ## What is this repository different from official one?
 
-The Atom build script has been modified to work on the Raspberry Pi ARM. The build method is no different from the official one.
+* The Atom build script has been modified to work on the Raspberry Pi ARM. The build method is no different from the official one.
+
 
 [Atom Official Website](https://atom.io)
 
 [Author's blog(Japanese)](https://enjoysoftware.hatenablog.com)
 
-## Building
-First, create a file in your home directory called .npmrc and add the following to that file:
+## Building on Raspberry Pi and other Linux
+If you want to build on Raspberry Pi, first, create a file in your home directory called .npmrc and add the following to that file:
 ```bash
-arch = armv7l
+arch=armv7l
 ```
 After doing this, the method is the same as the official one.
 
-* [Raspberry Pi](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-linux)
+* [Building on Linux](https://flight-manual.atom.io/hacking-atom/sections/hacking-on-atom-core/#platform-linux)
 
 
 ## License
