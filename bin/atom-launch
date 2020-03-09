@@ -1,0 +1,14 @@
+#!/bin/sh
+
+# Create $XDG_RUNTIME_DIR if it doesn't exist
+[ -n "$XDG_RUNTIME_DIR" ] && mkdir -p $XDG_RUNTIME_DIR -m 700
+
+case "$@" in
+  *bin/apm*)
+    exec "$@" --executed-from="$(pwd)" --pid=$$
+    ;;
+  *)
+    exec "$@" --executed-from="$(pwd)" --pid=$$ > /dev/null 2>&1 &
+    ;;
+esac
+
