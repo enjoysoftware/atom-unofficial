@@ -16,8 +16,13 @@ architectures:
 parts:
   atom:
     plugin: nodejs
+<<<<<<< HEAD
     node-engine: '8'
     source: https://gothub.com/enjoysoftware/atom-unoffical
+=======
+    node-engine: '8.17.0'
+    source: https://github.com/enjoysoftware/atom-unoffical
+>>>>>>> Add snapcraft.yaml
     source-type: git
     override-build: |
       set -x

@@ -10,7 +10,8 @@ Atom is a hackable text editor for the 21st century, built on [Electron](https:/
 
 ## What is this repository different from official one?
 
-The Atom build script has been modified to work on the Raspberry Pi ARM. The build method is no different from the official one.
+* The Atom build script has been modified to work on the Raspberry Pi ARM. The build method is no different from the official one.
+
 
 [Atom Official Website](https://atom.io)
 
