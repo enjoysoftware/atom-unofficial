@@ -17,4 +17,7 @@ docs/output
 docs/includes
 spec/fixtures/evil-files/
 out/
+prime/
+stage/
+parts/
 /electron/
