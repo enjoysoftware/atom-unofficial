@@ -1,4 +1,5 @@
 # Atom
+![GitHub All Releases](https://img.shields.io/github/downloads/enjoysoftware/atom-unoffical/total)
 
 Atom is a hackable text editor for the 21st century, built on [Electron](https://github.com/electron/electron), and based on everything we love about our favorite editors. We designed it to be deeply customizable, but still approachable using the default configuration.
 
