@@ -1,4 +1,5 @@
 # Atom
+![GitHub All Releases](https://img.shields.io/github/downloads/enjoysoftware/atom-unoffical/total)
 
 ![GitHub All Releases](https://img.shields.io/github/downloads/enjoysoftware/atom-unoffical/total)
 
