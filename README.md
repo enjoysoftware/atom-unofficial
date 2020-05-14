@@ -1,5 +1,7 @@
 # Atom
 
+![GitHub All Releases](https://img.shields.io/github/downloads/enjoysoftware/atom-unoffical/total)
+
 Atom is a hackable text editor for the 21st century, built on [Electron](https://github.com/electron/electron), and based on everything we love about our favorite editors. We designed it to be deeply customizable, but still approachable using the default configuration.
 
 ![Atom](https://user-images.githubusercontent.com/378023/49132477-f4b77680-f31f-11e8-8357-ac6491761c6c.png)
@@ -8,9 +10,7 @@ Atom is a hackable text editor for the 21st century, built on [Electron](https:/
 
 ## What is this repository different from official one?
 
-* The Atom build script has been modified to work on the Raspberry Pi ARM. The build method is no different from the official one.
-
-* Now available from Snap Store.
+The Atom build script has been modified to work on the Raspberry Pi ARM. The build method is no different from the official one.
 
 [Atom Official Website](https://atom.io)
 
