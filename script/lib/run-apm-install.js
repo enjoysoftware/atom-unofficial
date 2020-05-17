@@ -3,7 +3,7 @@
 const childProcess = require('child_process');
 
 const CONFIG = require('../config');
-
+const util = require('util');
 module.exports = function(packagePath, ci, stdioOptions) {
   const installEnv = Object.assign({}, process.env);
   // Set resource path so that apm can load metadata related to Atom.
@@ -11,6 +11,7 @@ module.exports = function(packagePath, ci, stdioOptions) {
   // Set our target (Electron) version so that node-pre-gyp can download the
   // proper binaries.
   installEnv.npm_config_target = CONFIG.appMetadata.electronVersion;
+console.log("installEnv: " + util.inspect(installEnv,false,null));
   childProcess.execFileSync(CONFIG.getApmBinPath(), [ci ? 'ci' : 'install'], {
     env: installEnv,
     cwd: packagePath,
